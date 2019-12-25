@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--name 要与自定义的view的类名保持一致，否则在xml文件中使用属性的时候将不会出现提示信息-->
+    <declare-styleable name="MyTextView">
+        <!--name 要与自定义的view的类名保持一致，否则在xml文件中使用属性的时候将不会出现提示信息-->
+        <attr name="text" format="string" />
+        <attr name="testAttr" format="integer" />
+        <attr name="background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyHeaderView">
+        <attr name="isShowRight" format="boolean" />
+        <attr name="isShowLeft" format="boolean" />
+        <attr name="isShowTitle" format="boolean" />
+
+        <attr name="titleText" format="string" />
+        <attr name="rightImage" format="reference" />
+        <attr name="leftImage" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CToolbar">
+        <attr name="isShowToolbarBack" format="boolean" />
+        <attr name="isShowToolbarComplete" format="boolean" />
+        <attr name="isShowToolbarLocation" format="boolean" />
+
+        <attr name="toolbarTitleText" format="string" />
+        <attr name="toolbarNumText" format="string" />
+        <attr name="toolbarLocationText" format="string" />
+        <attr name="toolbarCompleteText" format="string" />
+
+        <attr name="toolbarBackImageRes" format="reference" />
+        <attr name="toolbarLocationImageRes" format="reference" />
+    </declare-styleable>
+
+</resources>
