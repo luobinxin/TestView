@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 112
+        versionName "1.1.2"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -32,4 +32,23 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+
+//添加
+apply plugin: 'com.novoda.bintray-release'
+publish {
+    //bintray.com用户名
+    userOrg = 'robin1015'
+    //jcenter上的路径
+    groupId = 'com.powerpeak'
+    //项目名称
+    artifactId = 'customerview'
+    //版本号
+    publishVersion = '1.1.2'
+    //描述，不重要
+    desc = 'customerview sdk 1.1.2'
+    //网站，不重要
+    website = 'https://www.powerpeak.com'
+
 }

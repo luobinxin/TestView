@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+
+    <TextView
+        android:id="@+id/tv_cdialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cdialog_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="即将清空已有数据，原数据自动备份到back目录，是否继续"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cdialog_title" />
+
+    <View
+        android:id="@+id/v_h_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#E4E4E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cdialog_message" />
+
+    <View
+        android:id="@+id/v_v_line"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:background="#E4E4E4"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cdialog_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_cdialog_title"
+        app:layout_constraintTop_toBottomOf="@+id/v_h_line" />
+
+    <TextView
+        android:id="@+id/tv_cdialog_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@android:string/cancel"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_v_line"
+        app:layout_constraintEnd_toStartOf="@+id/v_v_line"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_v_line"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_cdialog_ok"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@android:string/ok"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_v_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_v_line"
+        app:layout_constraintTop_toTopOf="@+id/v_v_line" />
+</android.support.constraint.ConstraintLayout>
